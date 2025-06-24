@@ -1,0 +1,177 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 72vh;
+  padding: 5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: linear-gradient(170deg, #0d0d0d 30%, #1f1f1f 60%, #c6ff00 180%);
+  color: white;
+}
+
+.about-left {
+  flex: 1;
+  padding-right: 3rem;
+}
+
+.about-subtitle {
+  color: #666;
+  font-size: 1rem;
+}
+
+.about-heading {
+   font-size: 60px;
+  color: white;
+  margin: 0;
+  text-align: left;
+    background: none;
+}
+
+.highlight {
+  color: #c6ff00;
+}
+
+.about-description {
+  margin: 1.5rem 0;
+  color: #aaa;
+  font-size: 1rem;
+  max-width: 600px;
+}
+
+.about-list {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.about-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-list li {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+
+.learn-more-btn {
+  padding: 0.8rem 2rem;
+  background-color: #c6ff00;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Right Side Elements */
+.about-right {
+  margin-top: 15vh;
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.floating-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background-color: #fff;
+  color: black;
+  border-radius: 30px;
+  position: absolute;
+  animation: floatIn 1.2s ease forwards;
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+.card1 {
+  top: 0;
+  left: 20%;
+  animation-delay: 0.3s;
+}
+
+.card2 {
+  top: 90px;
+  left: 0;
+  animation-delay: 0.6s;
+}
+
+.card3 {
+  top: 180px;
+  left: 20%;
+  animation-delay: 0.9s;
+}
+
+.card-text {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.card-avatar,
+.card-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.arrow {
+  margin-left: 0.4rem;
+  font-size: 1rem;
+}
+
+.experience-badge {
+  position: absolute;
+  right: 10%;
+  /* bottom: 15%; */
+  background-color: #c6ff00;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: popIn 1.5s ease;
+}
+
+.experience-badge h3 {
+  font-size: 2.8rem;
+  margin: 0;
+}
+
+.experience-badge p {
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Animations */
+@keyframes floatIn {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

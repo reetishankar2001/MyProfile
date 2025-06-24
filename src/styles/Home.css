@@ -1,0 +1,99 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  height: 90vh;
+  background: linear-gradient(170deg, #0d0d0d 30%, #1f1f1f 60%, #c6ff00 180%);
+  color: white;
+}
+
+.hero-text {
+  max-width: 50%;
+  background: none;
+}
+
+.greeting {
+  font-size: 24px;
+  color: #666;
+  text-align: left;
+    background: none;
+
+}
+
+.name {
+  font-size: 60px;
+  color: #c6ff00;
+  margin: 0;
+  text-align: justify;
+    background: none;
+
+}
+
+.title {
+  font-size: 30px;
+  margin: 10px 0;
+  text-align: justify;
+    background: none;
+
+}
+
+.desc {
+  color: #999;
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: left;
+    background: none;
+
+}
+
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+    background: none;
+
+}
+
+.hire-btn {
+  background-color: #c6ff00;
+  color: black;
+  font-weight: bold;
+  height: 5vh;
+  border: none;
+  border-radius: 5px;
+  text-transform: none;
+}
+.hire-btn:hover {
+  background-color: #dcf38a;
+}
+
+.resume-link {
+  color: white;
+  border-bottom: 1px solid white;
+  align-self: center;
+  text-decoration: none;
+  background: none;
+}
+.resume-link:hover {
+  color: #dcf38a;
+}
+
+.hero-image {
+  position: relative;
+  width: 100vw;
+  height: 70vh;
+  padding: 70px;
+    background: none;
+
+}
+.portrait {
+  position: relative;
+  border-radius: 10%;
+  width: 40vw;
+  height: 50vh;
+
+}

@@ -1,0 +1,49 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar {
+  background-color: #0d0d0d;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  color: #c6ff00;
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  margin-right: 8px;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 50px;
+}
+
+.nav-btn {
+  background: none !important;
+  color: white !important;
+  font-weight: 600;
+  text-transform: none;
+  border-radius: 20px;
+  padding: 6px 16px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+  color: #aaff00 !important;
+}
+
+@media (max-width: 900px) {
+  .nav-links {
+    gap: 10px;
+  }
+}
